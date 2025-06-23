@@ -72,7 +72,7 @@ Bangun sistem pembelajaran dan administrasi sekolah yang cepat, stabil, dan teri
       display: none;
     }
 
-    .parallax-booking {
+    /* .parallax-booking {
       background-image: url('https://ikiplus.github.io/compluscss/img/chromebook.png');
       min-height: 400px;
       background-attachment: fixed;
@@ -82,7 +82,39 @@ Bangun sistem pembelajaran dan administrasi sekolah yang cepat, stabil, dan teri
       display: flex;
       align-items: center;
       justify-content: center;
-    }
+    } */
+
+    .parallax-booking {
+  background-image: url('https://ikiplus.github.io/compluscss/img/chromebook_removed.png');
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;  /* PAKAI COVER supaya tetap dominan besar */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.parallax-booking::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(0,0,0,0) 50%, rgba(0,0,0,0.3) 90%);
+  backdrop-filter: blur(2px);
+  z-index: 0;
+}
+
+.parallax-booking > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+
     .parallax-doorlock {
       background-image: url('https://ikiplus.github.io/compluscss/img/projector.png');
       min-height: 400px;
@@ -152,6 +184,18 @@ Bangun sistem pembelajaran dan administrasi sekolah yang cepat, stabil, dan teri
       .desktop-menu { display: none; }
       .mobile-menu { display: block; }
     }
+
+    @media (min-width: 768px) {
+  .parallax-booking {
+    background-size: 70%;
+  }
+}
+@media (min-width: 1280px) {
+  .parallax-booking {
+    background-size: 60%;
+  }
+}
+
   </style>
    
 </head>
