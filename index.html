@@ -84,13 +84,43 @@ Bangun sistem pembelajaran dan administrasi sekolah yang cepat, stabil, dan teri
       justify-content: center;
     } */
 
-    .parallax-booking {
+    /* .parallax-booking {
   background-image: url('https://ikiplus.github.io/compluscss/img/chromebook_removed_v2.png');
   min-height: 500px;
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;  /* PAKAI COVER supaya tetap dominan besar */
+  background-size: cover;  PAKAI COVER supaya tetap dominan besar
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.parallax-booking::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(0,0,0,0) 50%, rgba(0,0,0,0.3) 90%);
+  backdrop-filter: blur(2px);
+  z-index: 0;
+}
+
+.parallax-booking > * {
+  position: relative;
+  z-index: 1;
+} */
+
+
+.parallax-booking {
+  background-image: url('https://ikiplus.github.io/compluscss/img/chromebook-removed_v2.png');
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 70%;  /* Zoom out sedikit biar ke dalam */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -112,6 +142,7 @@ Bangun sistem pembelajaran dan administrasi sekolah yang cepat, stabil, dan teri
   position: relative;
   z-index: 1;
 }
+
 
 
 
