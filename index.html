@@ -115,7 +115,7 @@ Bangun sistem pembelajaran dan administrasi sekolah yang cepat, stabil, dan teri
 
 
 .parallax-booking {
-  background-image: url('https://ikiplus.github.io/compluscss/img/chromebook_removed_v2.png');
+  background-image: url('https://ikiplus.github.io/compluscss/img/chromebook.png');
   min-height: 500px;
   background-attachment: fixed;
   background-position: center center;
@@ -146,7 +146,7 @@ Bangun sistem pembelajaran dan administrasi sekolah yang cepat, stabil, dan teri
 
 
 
-    .parallax-doorlock {
+    /* .parallax-doorlock {
       background-image: url('https://ikiplus.github.io/compluscss/img/projector.png');
       min-height: 400px;
       background-attachment: fixed;
@@ -156,8 +156,38 @@ Bangun sistem pembelajaran dan administrasi sekolah yang cepat, stabil, dan teri
       display: flex;
       align-items: center;
       justify-content: center;
-    }
-     .parallax {
+    } */
+
+
+    .parallax-doorlock {
+  background-image: url('https://ikiplus.github.io/compluscss/img/projector.png');
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 70%;  /* Zoom out sedikit biar ke dalam */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.parallax-doorlock::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(0,0,0,0) 50%, rgba(0,0,0,0.3) 90%);
+  backdrop-filter: blur(2px);
+  z-index: 0;
+}
+
+.parallax-doorlock > * {
+  position: relative;
+  z-index: 1;
+}
+     /* .parallax {
       background-image: url('https://ikiplus.github.io/compluscss/img/router.png');
       min-height: 400px;
       background-attachment: fixed;
@@ -167,8 +197,37 @@ Bangun sistem pembelajaran dan administrasi sekolah yang cepat, stabil, dan teri
       display: flex;
       align-items: center;
       justify-content: center;
-    }
-         .parallax-connector {
+    } */
+
+    .parallax {
+  background-image: url('https://ikiplus.github.io/compluscss/img/router.png');
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 70%;  /* Zoom out sedikit biar ke dalam */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.parallax::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(0,0,0,0) 50%, rgba(0,0,0,0.3) 90%);
+  backdrop-filter: blur(2px);
+  z-index: 0;
+}
+
+.parallax > * {
+  position: relative;
+  z-index: 1;
+}
+         /* .parallax-connector {
       background-image: url('https://ikiplus.github.io/compluscss/img/connector.png');
       min-height: 400px;
       background-attachment: fixed;
@@ -178,9 +237,38 @@ Bangun sistem pembelajaran dan administrasi sekolah yang cepat, stabil, dan teri
       display: flex;
       align-items: center;
       justify-content: center;
-    }
+    } */
+
+    .parallax-connector {
+  background-image: url('https://ikiplus.github.io/compluscss/img/connector.png');
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 70%;  /* Zoom out sedikit biar ke dalam */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.parallax-connector::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(0,0,0,0) 50%, rgba(0,0,0,0.3) 90%);
+  backdrop-filter: blur(2px);
+  z-index: 0;
+}
+
+.parallax-connector > * {
+  position: relative;
+  z-index: 1;
+}
     
-    .parallax-compluss {
+    /* .parallax-compluss {
   background-image: url('https://ikiplus.github.io/compluscss/img/logo1.jpg');
   background-color: white;
   min-height: 400px;
@@ -191,7 +279,38 @@ Bangun sistem pembelajaran dan administrasi sekolah yang cepat, stabil, dan teri
   display: flex;
   align-items: center;
   justify-content: center;
+} */
+
+.parallax-compluss {
+  background-image: url('https://ikiplus.github.io/compluscss/img/logo1.jpg');
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 70%;  /* Zoom out sedikit biar ke dalam */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
 }
+
+.parallax-compluss::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(0,0,0,0) 50%, rgba(0,0,0,0.3) 90%);
+  backdrop-filter: blur(2px);
+  z-index: 0;
+}
+
+.parallax-compluss > * {
+  position: relative;
+  z-index: 1;
+}
+
+
 
 .parallax-testimonial {
       background-image: url('https://ikiplus.github.io/compluscss/img/testimonithumb.png');
@@ -220,9 +339,40 @@ Bangun sistem pembelajaran dan administrasi sekolah yang cepat, stabil, dan teri
   .parallax-booking {
     background-size: 70%;
   }
+
+    .parallax-doorlock {
+    background-size: 70%;
+  }
+
+    .parallax-connector{
+    background-size: 70%;
+  }
+
+    .parallax-router {
+    background-size: 70%;
+  }
+
+    .parallax-compluss {
+    background-size: 70%;
+  }
 }
 @media (min-width: 1280px) {
   .parallax-booking {
+    background-size: 60%;
+  }
+  .parallax-doorlock {
+    background-size: 60%;
+  }
+
+    .parallax-connector{
+    background-size: 60%;
+  }
+
+    .parallax-router {
+    background-size: 60%;
+  }
+
+    .parallax-compluss {
     background-size: 60%;
   }
 }
